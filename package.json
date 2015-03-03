@@ -1,21 +1,21 @@
 {
   "name": "angular-hy-res",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Hypermedia client for AngularJS inspired by $resource",
   "keywords": [
     "angular",
     "hypermedia"
   ],
-  "homepage": "https://github.com/petejohanson/angular-hy-res",
-  "bugs": "https://github.com/petejohanson/angular-hy-res/issues",
+  "homepage": "https://github.com/julienlafont/angular-hy-res",
+  "bugs": "https://github.com/julienlafont/angular-hy-res/issues",
   "author": {
-    "name": "Pete Johanson",
-    "email": "peter@peterjohanson.com",
-    "url": "https://github.com/petejohanson"
+    "name": "Julien LAFONT",
+    "email": "julien.lafont@tabmo.fr",
+    "url": "https://github.com/julienlafont"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/petejohanson/angular-hy-res.git"
+    "url": "https://github.com/julienlafont/angular-hy-res.git"
   },
   "licenses": [
     {
