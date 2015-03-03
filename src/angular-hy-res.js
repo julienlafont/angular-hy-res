@@ -255,8 +255,6 @@ angular.module('angular-hy-res', [])
     };
   }).factory('hrRoot', function(hrWebLink, hrResource, $http) {
     return function(url, options) {
-      this.follow = function() {
-        return new hrWebLink({ href: url }, $http, hrResource).follow(options);
-      };
+      return new hrWebLink({ href: url }, $http, hrResource).follow(options);
     };
   });
