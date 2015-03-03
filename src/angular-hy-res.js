@@ -244,8 +244,6 @@ angular.module('angular-hy-res', [])
           request.then(function(response) {
               res.$$resolve(response.data, response.headers);
               return res;
-            }, function(response) {
-              // TODO: What to do for failure case?
             });
 
         return res;
