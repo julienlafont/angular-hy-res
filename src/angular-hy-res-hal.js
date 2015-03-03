@@ -2,16 +2,11 @@
 
 angular.module('angular-hy-res-hal', ['angular-hy-res'])
   .provider('hrHalExtension', function() {
-    this.mediaTypes = ['application/hal+json'];
     this.$get = function(hrWebLinkFactory, hrLinkCollection) {
-      var mediaTypeSet = {};
-      for (var i = 0; i < this.mediaTypes.length; i++) {
-        mediaTypeSet[this.mediaTypes[i]] = true;
-      }
-
+      
       var HalExtension = function() {
         this.applies = function(data, headers) {
-          return mediaTypeSet[headers('Content-Type')] !==  undefined;
+          return true;
         };
 
         this.dataParser = function(data, headers) {
