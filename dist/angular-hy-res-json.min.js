@@ -1,6 +1,6 @@
 /**
  * angular-hy-res - Hypermedia client for AngularJS inspired by $resource
- * @version v0.0.10 - 2015-03-03
+ * @version v0.0.10 - 2015-04-10
  * @link https://github.com/julienlafont/angular-hy-res
  * @author Julien LAFONT <julien.lafont@tabmo.fr>
  * @license MIT License, http://www.opensource.org/licenses/MIT

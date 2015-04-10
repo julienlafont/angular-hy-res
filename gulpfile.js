@@ -29,7 +29,7 @@ var banner = ['/**',
   ' */',
   ''].join('\n');
 
-function webpackPipe() {
+/*function webpackPipe() {
   return lazypipe()
     .pipe(gif, /angular-hy-res-link-header.js/, gwebpack({
       output: {
@@ -38,7 +38,7 @@ function webpackPipe() {
         libraryTarget: 'var'
       }
     }));
-}
+}*/
 
 function jsSourcePipe() {
   return gulp.src('src/**/*.js')
@@ -65,13 +65,13 @@ function getJSHintPipe(rc) {
 
 gulp.task('js-single', ['jshint'], function () {
   return jsSourcePipe()
-    .pipe(webpackPipe()())
+    //.pipe(webpackPipe()())
     .pipe(getOutputPipe(require('./package.json'))());
 });
 
 gulp.task('js-full', ['jshint'], function () {
   return jsSourcePipe()
-    .pipe(webpackPipe()())
+    //.pipe(webpackPipe()())
     .pipe(concat('angular-hy-res-full.js'))
     .pipe(getOutputPipe(require('./package.json'))());
 });
@@ -122,7 +122,7 @@ gulp.task('karma:watch', function() {
 gulp.task('test', ['jshint', 'karma'], function() {
 });
 
-gulp.task('bump', ['test'], function() {
+gulp.task('bump', function() {
   return gulp.src('./*.json')
     .pipe(bump({ type: gulp.env.type || 'patch' }))
     .pipe(gulp.dest('./'));
